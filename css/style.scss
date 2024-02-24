@@ -1,3 +1,34 @@
-h1 {
-    color: red;
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-body {
+    background-color: #1d1f20;
+    .container {
+        width: 100%;
+        height: 100vh;
+        // background-image: url("../img/home-image.png");
+        // mix-blend-mode: multiply;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../img/patone.png");
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            // z-index: 1;
+            opacity: 0.1;
+        }
+        .flex-container {
+            display: flex;
+            // align-items: center;
+            justify-content: space-evenly;
+        }
+    }
 }

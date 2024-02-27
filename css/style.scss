@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 .page-body {
@@ -11,8 +12,6 @@
     .container {
         width: 100%;
         height: 100vh;
-        // background-image: url("../img/home-image.png");
-        // mix-blend-mode: multiply;
 
         &::before {
             position: absolute;
@@ -22,13 +21,31 @@
             height: 100%;
             top: 0;
             left: 0;
-            // z-index: 1;
             opacity: 0.1;
         }
         .flex-container {
             display: flex;
-            // align-items: center;
+            align-items: center;
             justify-content: space-evenly;
+            height: 100%;
+            .content-aside {
+                .site-logo {
+                }
+                .logo-heading {
+                }
+                .flex-headings {
+                    .tool-heading {
+                    }
+                    .manage-heading {
+                    }
+                }
+                .mini-menu {
+                }
+                .mini-social-menu {
+                }
+            }
+            .form-aside {
+            }
         }
     }
 }

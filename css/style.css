@@ -18,12 +18,23 @@ body {
 .page-body .container {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 .page-body .container .flex-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .page-body .container .flex-container .content-aside {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-body .container .flex-container .content-aside {
+    display: none;
+  }
 }
 .page-body .container .flex-container .content-aside .site-logo {
   margin-bottom: 10px;
@@ -112,6 +123,11 @@ body {
   padding: 20px;
   border: 1px dashed #353535;
   border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .page-body .container .flex-container .form-aside form {
+    min-width: 350px;
+  }
 }
 .page-body .container .flex-container .form-aside form .flex-form .sign-flex .sign-on .sign-in {
   margin-top: 10px;
@@ -322,6 +338,11 @@ body {
   font-family: "Assistant", sans-serif;
   border: 1px solid #353535;
   color: #6c757d;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.page-body .container .flex-container .form-aside form .flex-form .sign-btn button:hover {
+  transform: translateY(-2px);
 }
 .page-body .container .flex-container .form-aside form .flex-form .dont-have-account p {
   font-size: 13px;
@@ -331,4 +352,7 @@ body {
 .page-body .container .flex-container .form-aside form .flex-form .dont-have-account p a {
   text-decoration: none;
   color: #2794eb;
+}
+.page-body .container .flex-container .form-aside form .flex-form .dont-have-account p a:hover {
+  color: #00c894;
 }/*# sourceMappingURL=style.css.map */

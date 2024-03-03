@@ -32,7 +32,7 @@ body {
         .flex-container {
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-around;
             height: 100%;
             .content-aside {
                 .site-logo {
@@ -251,6 +251,7 @@ body {
                                         font-weight: 400;
                                     }
                                     label.forgot-pass {
+                                        cursor: pointer;
                                         color: #2794eb;
                                     }
                                 }

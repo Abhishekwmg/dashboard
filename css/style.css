@@ -22,7 +22,7 @@ body {
 .page-body .container .flex-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 100%;
 }
 .page-body .container .flex-container .content-aside .site-logo {
@@ -218,6 +218,7 @@ body {
   font-weight: 400;
 }
 .page-body .container .flex-container .form-aside form .flex-form .inputs-contain .password-bar .pass-labels label.forgot-pass {
+  cursor: pointer;
   color: #2794eb;
 }
 .page-body .container .flex-container .form-aside form .flex-form .inputs-contain .password-bar .pass-input input {

@@ -16,6 +16,8 @@ body {
     color: #fff;
 }
 
+//Luno Login Stylesheet
+
 .page-body {
     background-color: #1d1f20;
     .container {
@@ -149,6 +151,22 @@ body {
                     }
                     .flex-form {
                         .sign-flex {
+                            .pass-reset {
+                                max-width: calc(500px - 80px);
+                                margin: 0 auto;
+                                .reset-img {
+                                    width: 200px;
+                                    margin: 0 auto;
+                                    img {
+                                        width: inherit;
+                                        filter: contrast(0.5);
+                                        transition: all 0.1s ease-in-out;
+                                        &:hover {
+                                            filter: contrast(1);
+                                        }
+                                    }
+                                }
+                            }
                             .sign-on {
                                 .sign-in {
                                     margin-top: 10px;
@@ -157,7 +175,8 @@ body {
                                     font-weight: 400;
                                 }
                                 .sign-in-sub-heading {
-                                    margin-top: 10px;
+                                    margin: 10px auto;
+                                    max-width: 300px;
                                     text-align: center;
                                     font-size: 14px;
                                     font-weight: 400;
@@ -219,6 +238,43 @@ body {
                         .inputs-contain {
                             margin-top: 20px;
                             padding: 0 12px;
+                            .fullname {
+                                margin-bottom: 10px;
+                                label {
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                }
+                                .name-input {
+                                    input {
+                                        margin-top: 10px;
+                                        display: inline-block;
+                                        color: #353535;
+                                        border: 1px solid #353535;
+                                        background-color: transparent;
+                                        padding: 12px 10px;
+                                        width: 49%;
+                                        border-radius: 5px;
+                                        outline: none;
+                                        transition: all 0.3s ease;
+
+                                        &:hover {
+                                            border-color: rgba(108, 115, 211, 0.3);
+                                        }
+
+                                        &:active {
+                                            border: 1px solid #2794eb;
+                                        }
+
+                                        &:focus {
+                                            box-shadow: 0 0 10px rgba(25, 24, 24, 0.15);
+                                            background-color: #212324;
+                                            border: 1px solid #2794eb;
+                                            color: #2794eb;
+                                        }
+                                    }
+                                }
+                            }
                             .email-bar {
                                 label {
                                     color: #fff;
@@ -265,8 +321,11 @@ body {
                                         font-weight: 400;
                                     }
                                     label.forgot-pass {
-                                        cursor: pointer;
-                                        color: #2794eb;
+                                        a {
+                                            cursor: pointer;
+                                            color: #2794eb;
+                                            text-decoration: none;
+                                        }
                                     }
                                 }
                                 .pass-input {
@@ -331,6 +390,9 @@ body {
                                     color: #fff;
                                     font-size: 14px;
                                     font-weight: 400;
+                                    span {
+                                        color: #2794eb;
+                                    }
                                 }
                                 input[type="checkbox"] {
                                     appearance: none;
@@ -407,3 +469,5 @@ body {
         }
     }
 }
+
+//

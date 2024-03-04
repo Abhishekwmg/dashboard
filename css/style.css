@@ -129,6 +129,22 @@ body {
     min-width: 350px;
   }
 }
+.page-body .container .flex-container .form-aside form .flex-form .sign-flex .pass-reset {
+  max-width: 420px;
+  margin: 0 auto;
+}
+.page-body .container .flex-container .form-aside form .flex-form .sign-flex .pass-reset .reset-img {
+  width: 200px;
+  margin: 0 auto;
+}
+.page-body .container .flex-container .form-aside form .flex-form .sign-flex .pass-reset .reset-img img {
+  width: inherit;
+  filter: contrast(0.5);
+  transition: all 0.1s ease-in-out;
+}
+.page-body .container .flex-container .form-aside form .flex-form .sign-flex .pass-reset .reset-img img:hover {
+  filter: contrast(1);
+}
 .page-body .container .flex-container .form-aside form .flex-form .sign-flex .sign-on .sign-in {
   margin-top: 10px;
   text-align: center;
@@ -136,7 +152,8 @@ body {
   font-weight: 400;
 }
 .page-body .container .flex-container .form-aside form .flex-form .sign-flex .sign-on .sign-in-sub-heading {
-  margin-top: 10px;
+  margin: 10px auto;
+  max-width: 300px;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -194,6 +211,38 @@ body {
   margin-top: 20px;
   padding: 0 12px;
 }
+.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .fullname {
+  margin-bottom: 10px;
+}
+.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .fullname label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .fullname .name-input input {
+  margin-top: 10px;
+  display: inline-block;
+  color: #353535;
+  border: 1px solid #353535;
+  background-color: transparent;
+  padding: 12px 10px;
+  width: 49%;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .fullname .name-input input:hover {
+  border-color: rgba(108, 115, 211, 0.3);
+}
+.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .fullname .name-input input:active {
+  border: 1px solid #2794eb;
+}
+.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .fullname .name-input input:focus {
+  box-shadow: 0 0 10px rgba(25, 24, 24, 0.15);
+  background-color: #212324;
+  border: 1px solid #2794eb;
+  color: #2794eb;
+}
 .page-body .container .flex-container .form-aside form .flex-form .inputs-contain .email-bar label {
   color: #fff;
   font-size: 14px;
@@ -233,9 +282,10 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .password-bar .pass-labels label.forgot-pass {
+.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .password-bar .pass-labels label.forgot-pass a {
   cursor: pointer;
   color: #2794eb;
+  text-decoration: none;
 }
 .page-body .container .flex-container .form-aside form .flex-form .inputs-contain .password-bar .pass-input input {
   margin-top: 10px;
@@ -292,6 +342,9 @@ body {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
+}
+.page-body .container .flex-container .form-aside form .flex-form .inputs-contain .remember label span {
+  color: #2794eb;
 }
 .page-body .container .flex-container .form-aside form .flex-form .inputs-contain .remember input[type=checkbox] {
   appearance: none;

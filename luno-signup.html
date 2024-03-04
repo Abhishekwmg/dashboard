@@ -29,7 +29,7 @@
                                 <p class="tool-para-two">Amazing Features to make your life easier & work efficient</p>
                             </div>
                             <div class="manage-heading">
-                                <p class="manege-para-one">Easily add & manage your services</p>
+                                <p class="manage-para-one">Easily add & manage your services</p>
                                 <p class="manage-para-two">It brings together your tasks, projects, timelines, files and
                                     more</p>
                             </div>
@@ -44,9 +44,9 @@
                         <div class="mini-social-menu">
                             <ul>
                                 <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-square-github"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -55,40 +55,64 @@
                     <form action="/">
                         <div class="flex-form">
                             <div class="sign-flex">
-                                <div class="">
-                                    <p class="sign-in">Sign in</p>
-                                    <p class="sign-in-sub-heading">Free access to our dashboard</p>
+                                <div class="sign-on">
+                                    <p class="sign-in">Create account</p>
+                                    <p class="sign-in-sub-heading">Free access to our dashboard.</p>
                                 </div>
                             </div>
-                            <div class="sign-with-google">
-                                <button>Sign in with Google</button>
-                            </div>
-                            <div class="divided">
+                            <!-- <div class="sign-with-google">
+                                <div class="btn-contain">
+                                    <img class="gim" src="./img/google.png" alt="">
+                                    <button>Sign in with Google</button>
+                                </div>
+                            </div> -->
+                            <!-- <div class="divided">
                                 <div class="dash-line"></div>
-                                <div class="">
+                                <div class="or-text">
                                     <p class="or-para">OR</p>
                                 </div>
                                 <div class="dash-line"></div>
-                            </div>
-                            <div class="email-bar">
-                                <label for="email">Email address</label>
-                                <input type="email">
-
-                            </div>
-                            <div class="password-bar">
-                                <label for="password">Password</label>
-                                <label for="">Forgot password?</label>
-                                <input type="password">
-                            </div>
-                            <div class="remember">
-                                <input type="checkbox">
-                                <label for="">Remember me</label>
+                            </div> -->
+                            <div class="inputs-contain">
+                                <div class="fullname">
+                                    <label for="">Full name</label>
+                                    <div class="name-input">
+                                        <input type="text" placeholder="John">
+                                        <input type="text" placeholder="Parker">
+                                    </div>
+                                </div>
+                                <div class="email-bar">
+                                    <label for="email">Email address</label>
+                                    <input type="email" placeholder="name@example.com">
+                                </div>
+                                <div class="password-bar">
+                                    <div class="pass-labels">
+                                        <label for="password">Password</label>
+                                        <!-- <label class="forgot-pass" for="">Forgot password?</label> -->
+                                    </div>
+                                    <div class="pass-input">
+                                        <input id="pass-key" type="password" placeholder="8+ characters required">
+                                        <button type="reset" id="pass-eye"><i class="fa-solid fa-eye"></i></button>
+                                    </div>
+                                    <div class="pass-labels">
+                                        <label for="password">Confirm Password</label>
+                                        <!-- <label class="forgot-pass" for="">Forgot password?</label> -->
+                                    </div>
+                                    <div class="pass-input">
+                                        <input id="pass-key" type="password" placeholder="8+ characters required">
+                                        <button type="reset" id="pass-eye"><i class="fa-solid fa-eye"></i></button>
+                                    </div>
+                                </div>
+                                <div class="remember">
+                                    <input class="check" type="checkbox">
+                                    <label for="">I accept the <span>Terms and Conditions</span></label>
+                                </div>
                             </div>
                             <div class="sign-btn">
-                                <button>sign in</button>
+                                <button>sign up</button>
                             </div>
                             <div class="dont-have-account">
-                                <p>Don't have an account yet? <a href="">Sign up here</a></p>
+                                <p>Already have an account? <a href="luno-login.html">Sign in here</a></p>
                             </div>
                         </div>
                     </form>
@@ -97,6 +121,7 @@
 
         </div>
     </div>
+    <script src="./app/main.js"></script>
 </body>
 
 </html>

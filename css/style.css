@@ -411,4 +411,10 @@ body {
 }
 .page-body .container .flex-container .form-aside form .flex-form .dont-have-account p a:hover {
   color: #00c894;
+}
+
+#main {
+  background-color: #212324;
+  height: 100vh;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

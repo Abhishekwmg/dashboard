@@ -6,15 +6,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | D3.js</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="menu-aside">
-         
+    <div id="main">
+        <div class="container">
+            <div class="side-menu">
+                <div class="menu-wrapper">
+                    <div class="admin">
+                        <div class="admin-text">
+                            <p><span>luno</span>Admin</p>
+                            <div class="dots-menu">
+                                <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                        </div>
+                        <div class="project-select">
+                            <div class="dropdown-proj">
+                                <select name="option" id="projSelect">
+                                    <option value="volvo">Select Project</option>
+                                    <option value="saab">Luno University</option>
+                                    <option value="mercedes">Book Manager</option>
+                                    <option value="audi">Luno Sass App</option>
+                                </select>
+                            </div>
+                            <div class="add-proj">
+                                <button><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="dash-one">
+                            <div class="dash-lay-one">
+                                <ul>
+                                    <li>
+                                        <p>main</p>
+                                        <p>Unique dashboard designs</p>
+                                    </li>
+                                    <li><a href=""><i class="fa-solid fa-house-chimney"></i> My Dashboard
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-gauge-high"></i> Unique Dashboard
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Applications
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-address-book"></i> Crafted Pages
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-regular fa-id-card"></i> Account <i class="fa-solid
+                                                fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-shield-halved"></i> Authentication
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-code-branch"></i> Menu Level 0
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dash-two">
+                            <div class="dash-lay-two">
+                                <ul>
+                                    <li>
+                                        <p>resources</p>
+                                        <p>you need to know about <span>luno</span></p>
+                                    </li>
+                                    <li><a href=""><i class="fa-solid fa-floppy-disk"></i> Layouts <i class="fa-solid
+                                                fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-gauge-high"></i> Modals Popups
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Widget's
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-address-book"></i> Documentation
+                                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href=""><i class="fa-regular fa-id-card"></i> Changelog <i class="fa-solid
+                                                fa-chevron-right"></i></a>
+                                        <p class="version">v1.2.6</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dash-three">
+                            <div class="dash-lay-three">
+                                <ul>
+                                    <li><a href=""><i class="fa-regular fa-calendar-check"></i></a></li>
+                                    <li><a href=""><i class="fa-regular fa-copy"></i></a></li>
+                                    <li><a href=""><i class="fa-regular fa-newspaper"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-power-off"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="main-tools">
+                    <div class="header"></div>
+                    <div class="widgets">
+                        <div class="breadcrumb">
+                            <div class="options">
+                                <ul>
+                                    <li><a href="luno-main.html">Home</a></li>
+                                    <li><a href="luno-main.html">Dashboard</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="welcome-note">
+                            <div class="welcome-texts">
+                                <ul>
+                                    <li>
+                                        <p>Welcome back, Oxy!</p>
+                                    </li>
+                                    <li>
+                                        <p>You have 12 new messages and 7 new notifications.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="date-options">
+                                <div class="date-container">
+                                    <div class="date">
+                                        <input type="date">
+                                        <input type="date">
+                                    </div>
+                                    <div class="date-options">
+                                        <ul>
+                                            <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-download"></i></a></li>
+                                            <li><a href=""><i class="fa-regular fa-file-pdf"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-share-nodes"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rev-cards">
+                            <div class="rev">
+                                <div class="rev-one">
+                                    <div class="rev-ul">
+                                        <ul>
+                                            <li>
+                                                <p>new employee</p>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-chalkboard-user"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>51 <span><i class="fa-solid fa-arrow-turn-up"></i></span> <span>13%</span>
+                                        </p>
+                                        <p>Analytics for last week</p>
+                                    </div>
+                                </div>
+                                <div class="rev-two">
+                                    <div class="rev-ul">
+                                        <ul>
+                                            <li>
+                                                <p>expense</p>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-money-bills"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>$3,251<span><i class="fa-solid fa-arrow-turn-up"></i></span> <span>13%</span>
+                                        </p>
+                                        <p>Analytics for last week</p>
+                                    </div>
+                                </div>
+                                <div class="rev-three">
+                                    <div class="rev-ul">
+                                        <ul>
+                                            <li>
+                                                <p>revenue</p>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-sack-dollar"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>$18,925<span><i class="fa-solid fa-arrow-turn-up"></i></span>
+                                            <span>78%</span>
+                                        </p>
+                                        <p>Analytics for last week</p>
+                                    </div>
+                                </div>
+                                <div class="rev-four">
+                                    <div class="rev-ul">
+                                        <ul>
+                                            <li>
+                                                <p>new leads</p>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-briefcase"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>125<span><i class="fa-solid fa-arrow-turn-up"></i></span> <span>55%</span>
+                                        </p>
+                                        <p>Analytics for last week</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-cards">
+                            <div class="chart">
+                                <div class="chart-one">
+                                    <p>Welcome back, Oxy!!</p>
+                                    <p>Need help? Check out the documentation of Luno Admin. It includes tons of
+                                        Widgets, Components, and Elements with easy-to-follow documentation.</p>
+                                    <button><a href="#">visit documentation</a></button>
+                                </div>
+                                <div class="chart-two">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                                <div class="chart-three">
+                                    <canvas id="myChart2"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bar-cards">
+                            <div class="bar-one">
+                                <div class="bar-text">
+                                    <div class="">
+                                        <ul>
+                                            <li><a href="#">My Wallet</a></li>
+                                            <li><i class="fa-solid fa-ellipsis"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="">
+                                        <p>Available BTC <span>View Account</span></p>
+                                        <p>0.0386245 BTC</p>
+                                    </div>
+                                    <div class="">
+                                        <p>buy this month</p>
+                                        <p>3.0675432 BTC</p>
+                                    </div>
+                                    <div class="">
+                                        <p>sell this month</p>
+                                        <p>2.0345618 BTC</p>
+                                    </div>
+                                    <div class="">
+                                        <div>
+                                            <button><a href="#">Buy</a></button>
+                                            <button><a href="#">Sell</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="content-aside"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./app/main.js"></script>
 </body>
 
 </html>
